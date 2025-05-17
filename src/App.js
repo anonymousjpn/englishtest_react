@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, Link } from "react-router-dom";
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import Home from './home';
 import Grade5 from './grade5';
 import Grade4 from './grade4';
@@ -30,16 +30,18 @@ function App() {
           </ul>
         </header>
         <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/grade5" element={<Grade5 />} />
-          <Route path="/grade4" element={<Grade4 />} />
-          <Route path="/grade3" element={<Grade3 />} />
-          <Route path="/gradepre2" element={<Gradepre2 />} />
-          <Route path="/grade2" element={<Grade2 />} />
-          <Route path="/gradepre1" element={<Gradepre1 />} />
-          <Route path="/grade1" element={<Grade1 />} />
-        </Routes>
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/grade5" element={<Grade5 />} />
+              <Route path="/grade4" element={<Grade4 />} />
+              <Route path="/grade3" element={<Grade3 />} />
+              <Route path="/gradepre2" element={<Gradepre2 />} />
+              <Route path="/grade2" element={<Grade2 />} />
+              <Route path="/gradepre1" element={<Gradepre1 />} />
+              <Route path="/grade1" element={<Grade1 />} />
+            </Routes>
+          </HashRouter>
         </main>
       </div>
     </div>
