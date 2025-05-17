@@ -1,3 +1,4 @@
+import cefr from './images/cefr.png';
 import cefrexpand from './images/cefrexpand.png';
 import {useState} from 'react';
 const Home = () => {
