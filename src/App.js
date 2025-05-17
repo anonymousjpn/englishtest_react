@@ -11,26 +11,26 @@ import Grade1 from './grade1';
 import logo from './images/englishlogo.png';
 function App() {
   return (
-    <div className="App">
-      <div className="wrapper">
-        <header className="App-header">
-          <div className="flexdisplay1">
-            <h1 id="logo"><Link to='/' className="urladjustimage"><img src={logo} alt="" /></Link></h1>
-            <h1 id="title">英語のレベル別問題集</h1>
-          </div>
-          <ul className="flexdisplay2">
-            <li className="level" id="home"><Link to='/'>ホーム</Link></li>
-            <li className="level" id="gradefive"><Link to='/grade5'>英検5級</Link></li>
-            <li className="level" id="gradefour"><Link to='/grade4'>英検4級</Link></li>
-            <li className="level" id="gradethree"><Link to='/grade3'>英検3級</Link></li>
-            <li className="level" id="gradepretwo"><Link to='/gradepre2'>英検準2級</Link></li>
-            <li className="level" id="gradetwo"><Link to='/grade2'>英検2級</Link></li>
-            <li className="level" id="gradepreone"><Link to='/gradepre1'>英検準1級</Link></li>
-            <li className="level" id="gradeone"><Link to='/grade1'>英検1級</Link></li>
-          </ul>
-        </header>
-        <main>
-          <HashRouter>
+    <HashRouter>
+      <div className="App">
+        <div className="wrapper">
+          <header className="App-header">
+            <div className="flexdisplay1">
+              <h1 id="logo"><Link to='/' className="urladjustimage"><img src={logo} alt="" /></Link></h1>
+              <h1 id="title">英語のレベル別問題集</h1>
+            </div>
+            <ul className="flexdisplay2">
+              <li className="level" id="home"><Link to='/'>ホーム</Link></li>
+              <li className="level" id="gradefive"><Link to='/grade5'>英検5級</Link></li>
+              <li className="level" id="gradefour"><Link to='/grade4'>英検4級</Link></li>
+              <li className="level" id="gradethree"><Link to='/grade3'>英検3級</Link></li>
+              <li className="level" id="gradepretwo"><Link to='/gradepre2'>英検準2級</Link></li>
+              <li className="level" id="gradetwo"><Link to='/grade2'>英検2級</Link></li>
+              <li className="level" id="gradepreone"><Link to='/gradepre1'>英検準1級</Link></li>
+              <li className="level" id="gradeone"><Link to='/grade1'>英検1級</Link></li>
+            </ul>
+          </header>
+          <main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/grade5" element={<Grade5 />} />
@@ -41,10 +41,10 @@ function App() {
               <Route path="/gradepre1" element={<Gradepre1 />} />
               <Route path="/grade1" element={<Grade1 />} />
             </Routes>
-          </HashRouter>
-        </main>
+          </main>
+        </div>
       </div>
-    </div>
+    </HashRouter>
   );
 }
 
