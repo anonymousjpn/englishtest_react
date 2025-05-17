@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d95cde4f.css",
-    "main.js": "/static/js/main.faeae012.js",
-    "static/media/cefrexpand.png": "/static/media/cefrexpand.c965cf72898ebf17e0df.png",
-    "static/media/cefr.png": "/static/media/cefr.752cf244babccdcb8ea4.png",
-    "static/media/englishlogo.png": "/static/media/englishlogo.2b01b5ee37b58e575923.png",
-    "index.html": "/index.html",
-    "main.d95cde4f.css.map": "/static/css/main.d95cde4f.css.map",
-    "main.faeae012.js.map": "/static/js/main.faeae012.js.map"
+    "main.css": "/anonymousjpn/englishtest_react/static/css/main.d95cde4f.css",
+    "main.js": "/anonymousjpn/englishtest_react/static/js/main.c06eacff.js",
+    "static/media/cefrexpand.png": "/anonymousjpn/englishtest_react/static/media/cefrexpand.c965cf72898ebf17e0df.png",
+    "static/media/cefr.png": "/anonymousjpn/englishtest_react/static/media/cefr.752cf244babccdcb8ea4.png",
+    "static/media/englishlogo.png": "/anonymousjpn/englishtest_react/static/media/englishlogo.2b01b5ee37b58e575923.png",
+    "index.html": "/anonymousjpn/englishtest_react/index.html",
+    "main.d95cde4f.css.map": "/anonymousjpn/englishtest_react/static/css/main.d95cde4f.css.map",
+    "main.c06eacff.js.map": "/anonymousjpn/englishtest_react/static/js/main.c06eacff.js.map"
   },
   "entrypoints": [
     "static/css/main.d95cde4f.css",
-    "static/js/main.faeae012.js"
+    "static/js/main.c06eacff.js"
   ]
 }
