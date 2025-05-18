@@ -288,10 +288,10 @@ const Grade2=()=>{
         <p id="question18">8.You should <input type="text" id="refrain" value={textValue8} onChange={handleTextChange8} disabled={submitted} required /> smoking in order to maintain your health.</p>
         <p>訳：あなたは健康を維持するために、喫煙を控えなければなりません。</p>
         {submitted && textValue8.trim() !== "refrain from" && <p className="false">✕不正解</p>}{submitted && textValue8.trim() === "refrain from" && <p className="true">〇正解</p>}
-        <p id="question19">9.<input type="text" id="long" value={textValue9} onChange={handleTextChange9} disabled={submitted} required />,saving money is important..</p>
+        <p id="question19">9.<input type="text" id="long" value={textValue9} onChange={handleTextChange9} disabled={submitted} required />,saving money is important.</p>
         <p>訳：長い目で見れば、お金を節約することは重要です。</p>
         {submitted && textValue9.trim() !== "In the long run" && <p className="false">✕不正解</p>}{submitted && textValue9.trim() === "In the long run" && <p className="true">〇正解</p>}
-        <p id="question20">10.<input type="text" id="respect" value={textValue10} onChange={handleTextChange10} disabled={submitted} required /> the question,I can't give an answer..</p>
+        <p id="question20">10.<input type="text" id="respect" value={textValue10} onChange={handleTextChange10} disabled={submitted} required /> the question,I can't give an answer.</p>
         <p>訳：その質問に関しては、私は答えることができません。</p>
         {submitted && textValue10.trim() !== "With respect to" && <p className="false">✕不正解</p>}{submitted && textValue10.trim() === "With respect to" && <p className="true">〇正解</p>}
         <button type="submit" value="submit" id="submit" disabled={submitted}>解答を送信</button>

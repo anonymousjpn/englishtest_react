@@ -245,7 +245,7 @@ const Grade1 = () => {
         <p id="question9">9.It is difficult for me to <input type="text" id="comprehend" value={textValue4} onChange={handleTextChange4} disabled={submitted} required /> the universe.</p>
         <p>訳：私にとって、宇宙を理解することは難しい。</p>
         {submitted && textValue4.trim() !== "comprehend" && <p className="false">✕不正解</p>}{submitted && textValue4.trim() === "comprehend" && <p className="true">〇正解</p>}
-        <p id="question10">10.He was <input type="text" id="convicted" value={textValue5} onChange={handleTextChange5} disabled={submitted} required /> to me?</p>
+        <p id="question10">10.He was <input type="text" id="convicted" value={textValue5} onChange={handleTextChange5} disabled={submitted} required /> of a scam after he was arrested by the police.</p>
         <p>訳：彼は警察に逮捕された後、詐欺で有罪になった。</p>
         {submitted && textValue5.trim() !== "convicted" && <p className="false">✕不正解</p>}{submitted && textValue5.trim() === "convicted" && <p className="true">〇正解</p>}
         <h2 id="part2">英熟語編</h2>
