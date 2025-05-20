@@ -2,7 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = 3001;
-app.use(cors()); // 全てのオリジンを許可
+app.use(cors({
+  origin:'https://anonymousjpn.github.io'
+})); 
 app.use(express.json()); // JSONリクエストボディを解析
 app.post('/proxy',(request, response) => {
   const { url, method} = request.body; // リクエストの内容を取得
