@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, Link } from "react-router-dom";
+import { HashRouter,Route, Routes, Link } from "react-router-dom";
 import Home from './home';
 import Grade5 from './grade5';
 import Grade4 from './grade4';
@@ -11,7 +11,8 @@ import Grade1 from './grade1';
 import logo from './images/englishlogo.png';
 function App() {
   return (
-    <div className="App">
+    <HashRouter>
+     <div className="App">
       <div className="wrapper">
         <header className="App-header">
           <div className="flexdisplay1">
@@ -43,6 +44,7 @@ function App() {
         </main>
       </div>
     </div>
+  </HashRouter>
   );
 }
 
