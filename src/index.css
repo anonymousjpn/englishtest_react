@@ -188,10 +188,15 @@ h2{
     background-color:rgb(117, 83, 83);
 }
 #rightimage{
+    padding-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: 50%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
 }
 #cefr{
     width: 37vw;
@@ -244,4 +249,59 @@ button{
     width:3rem;
     height:1.8rem;
 }
-
+@media(max-width:1024px){
+    .flexdisplay3 {
+        height:30%;
+        flex-direction: column;
+        align-items: center; 
+    }
+    #lefttable {
+        width: 100%;
+        height: auto;
+        padding-bottom: 2%;
+    }
+    #rightimage {
+        padding-top: 2%;
+        height:30%;
+        flex-direction: column;
+        align-items: center;     
+    }
+    #cefr{
+        width: 70%;
+        height: 70%;      
+    } 
+}
+@media (max-width: 800px) {
+    .flexdisplay2 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .level {
+        height: auto;
+        width: 25%;
+        font-size: 3vw;
+    }
+    .flexdisplay3 {
+        height:30%;
+        flex-direction: column;
+        align-items: center; 
+    }
+    #lefttable {
+        width: 100%;
+        height: auto;
+    }
+    #rightimage{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #cefr{
+        width: 70%;
+        height: 70%;      
+    }
+}
